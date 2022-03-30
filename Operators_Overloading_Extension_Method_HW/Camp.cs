@@ -9,7 +9,7 @@ namespace Operators_Overloading_Extension_Method_HW
 {
     public class Camp
     {
-        //Field and properties
+        //Field and Properties
         private int id;
         public int Latitude { get; private set; }
         public int Longitude { get; private set; }
