@@ -37,7 +37,7 @@ namespace Operators_Overloading_Extension_Method_HW
             lastCampId++;
         }
 
-        //opertaors overload
+        //Opertaors overload
 
         public static bool operator ==(Camp camp1, Camp camp2)
         {
@@ -66,7 +66,7 @@ namespace Operators_Overloading_Extension_Method_HW
                  camp1.NumberOfFleshLights + camp2.NumberOfFleshLights);
         }
 
-        //overrides
+        //Overrides
         public override string ToString()
         {
             return JsonSerializer.Serialize(this);
