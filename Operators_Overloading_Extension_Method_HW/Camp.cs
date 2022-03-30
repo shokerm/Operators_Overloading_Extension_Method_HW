@@ -9,7 +9,7 @@ namespace Operators_Overloading_Extension_Method_HW
 {
     public class Camp
     {
-        //field and properties
+        //Field and properties
         private int id;
         public int Latitude { get; private set; }
         public int Longitude { get; private set; }
@@ -17,21 +17,7 @@ namespace Operators_Overloading_Extension_Method_HW
         public int NumberOfTents { get; private set; }
         public int NumberOfFleshLights { get; private set; }
         private int lastCampId = 0;
-        //ctor
-        
-        //public Camp(int latitude, int longitude, int numberOfPeople, int numberOfTents, int numberOfFleshLights)
-        //{
-        //    Latitude = latitude;
-        //    Longitude = longitude;
-        //    NumberOfPeople = numberOfPeople;
-        //    NumberOfTents = numberOfTents;
-        //    NumberOfFleshLights = numberOfFleshLights;
-        //    id = lastCampId;
-        //    lastCampId++;
-
-
-        //}
-
+        //Ctors
         public Camp(int numberOfPeople, int numberOfTents, int numberOfFleshLights)
         {
             NumberOfPeople = numberOfPeople;
@@ -40,7 +26,7 @@ namespace Operators_Overloading_Extension_Method_HW
             id = lastCampId;
             lastCampId++;
         }
-        public Camp(int latitude, int longitude, int numberOfPeople, int numberOfTents, int numberOfFleshLights):this(numberOfPeople, numberOfTents, numberOfFleshLights)       
+        public Camp(int latitude, int longitude, int numberOfPeople, int numberOfTents, int numberOfFleshLights) : this(numberOfPeople, numberOfTents, numberOfFleshLights)
         {
             Latitude = latitude;
             Longitude = longitude;
@@ -80,19 +66,19 @@ namespace Operators_Overloading_Extension_Method_HW
             return new Camp(camp1.NumberOfPeople + camp2.NumberOfPeople,
                 camp1.NumberOfTents + camp2.NumberOfTents,
                  camp1.NumberOfFleshLights + camp2.NumberOfFleshLights);
-            
-            
-           
-           
-              
-           
-
-            
-            
-                
 
 
-            
+
+
+
+
+
+
+
+
+
+
+
         }
 
         //overrides
